@@ -1,0 +1,30 @@
+package dooApp;
+
+import java.util.Scanner;
+
+public class Main{
+	public static void main(String[] args) {
+	// TODO Auto-generated method stub
+	//System.out.println("Non trouvé ");
+  	DoApp a = new DoApp();
+  	Scanner sc = new Scanner(System.in);
+  	System.out.println("Saisissez la taille du tableau");
+  	long N = sc.nextLong();
+	long ints[] = new long[(int) N];
+  
+  for(int i=0; i<N; i++){
+  	ints[i]=i;
+  }
+  System.out.println("Saisissez le nombre à recherche ?");
+  int get = sc.nextInt();
+	boolean find = a.exists(ints, get);
+  	if(find) {
+		System.out.println("Trouvé");
+	}else {
+		System.out.println("Non trouvé ");
+	}
+        
+
+	}
+
+}

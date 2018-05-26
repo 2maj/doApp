@@ -1,0 +1,37 @@
+package dooApp;
+import java.util.Arrays;
+public class DoApp {
+
+	static boolean exists(int[] ints, int k) {
+		int length = ints.length;
+		int end = length;
+		int begin = 0;
+		int middle = (end-begin)/2;
+		boolean find=false;
+		
+		while(find == false || end == begin){
+			
+          if(k > ints[middle]){
+        	begin = middle;
+            System.out.println("K >"+ ints[middle]);
+          }
+          
+          if(k < ints[middle]){
+            end = middle;
+            middle = (end-begin)/2;
+            System.out.println("K <"+ ints[middle]);   
+		   }
+          
+          if(k==ints[middle]){
+            find = true;
+            System.out.println("K ="+ ints[middle]);
+		    }
+          middle = (end-begin)/2;
+		    
+		}
+		return find;
+	}
+		
+
+
+}

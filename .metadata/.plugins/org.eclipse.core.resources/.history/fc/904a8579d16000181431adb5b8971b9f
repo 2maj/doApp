@@ -1,0 +1,49 @@
+package dooApp;
+import java.util.Arrays;
+public class Main{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Non trouvé ");
+		DoApp a = new DoApp();
+		int [] ints = {1,9,40,102,522,600};
+		if(a.exists(ints, 102)) {
+			System.out.println("Trouvé");
+		}else {
+			System.out.println("Non trouvé ");
+		}
+
+	}
+
+}
+public class DoApp {
+
+	public static boolean exists(int[] ints, int k) {
+		int length = ints.length;
+		int middle = length/2;
+		boolean find=false;
+
+		while(length >0  || !find){
+
+			if(k > ints[middle]){
+				length = length - middle;
+				System.out.println("K >");
+
+			}
+			if(k < ints[middle]){
+				length = middle;
+				System.out.println("K <");
+
+			}
+			if(k==ints[middle]){
+				find = true;
+				System.out.println("K =");
+			}
+			middle = length/2;
+
+		}
+		return find;
+	}
+
+
+
+}

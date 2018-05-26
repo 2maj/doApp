@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;dooApp.A.java&apos; to &apos;DoApp.java&apos;&#x0D;&#x0A;- Original project: &apos;dooApp&apos;&#x0D;&#x0A;- Original element: &apos;dooApp.A.java&apos;&#x0D;&#x0A;- Renamed element: &apos;dooApp.DoApp.java&apos;" description="Rename compilation unit &apos;A.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;dooApp{A.java" name="DoApp.java" references="false" stamp="1527331344174" version="1.0"/>
+</session>

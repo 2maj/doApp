@@ -1,0 +1,23 @@
+package dooApp;
+
+public class Main{
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//System.out.println("Non trouvé ");
+      	DoApp a = new DoApp();
+		int [] ints = {1,9,40,102,522,600};
+      /*
+      for(int i=0; i<ints.length; i++){
+      	System.out.println(ints[i]);
+      }
+	*/
+      if(a.exists(ints, 52)) {
+			System.out.println("Trouvé");
+		}else {
+			System.out.println("Non trouvé ");
+		}
+        
+
+	}
+
+}
